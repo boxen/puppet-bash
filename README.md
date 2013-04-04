@@ -1,5 +1,7 @@
 # BASH Puppet Module for Boxen
 
+[![Build Status](https://travis-ci.org/boxen/puppet-bash.png)](https://travis-ci.org/boxen/puppet-bash)
+
 Installs bash and makes it your default shell. For justice.
 
 ## Usage
