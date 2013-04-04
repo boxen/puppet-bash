@@ -8,6 +8,9 @@ Installs bash and makes it your default shell. For justice.
 
 ```puppet
 include bash
+
+# include bash completion package as well
+include bash::completion
 ```
 
 # Required Puppet Modules
