@@ -5,6 +5,11 @@ describe "bash::completion" do
 
   it do
     should contain_package("bash-completion").with_ensure("latest")
+
+    should contain_boxen__env_script("bash_completion").with({
+        :ensure   => :present,
+        :priority => "lowest",
+    })
   end
 end
 
