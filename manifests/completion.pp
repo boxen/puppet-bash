@@ -10,4 +10,9 @@ class bash::completion {
   package { 'bash-completion':
     ensure => latest
   }
+
+  boxen::env_script { "bash_completion":
+    content  => template('bash/bash_completion.erb'),
+    priority => 'lowest',
+  }
 }
